@@ -13,6 +13,7 @@ Currently supported ciphers included in this program:
     - [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 - Polyalphabetic Subtstitution
     - [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
+    - [Beaufort cipher](https://en.wikipedia.org/wiki/Beaufort_cipher)
 
 ## Planned Ciphers
 - Transposition
@@ -28,7 +29,9 @@ This projects utilize CMake for building, below are the instructions (make sure 
 5. To run, do `./polygraphia [ARGS]` on UNIX systems, and `polygraphia.exe [ARGS]` on Windows systems.
 
 ## Usage
-1. Caesar Cipher: `polygraphia caesar (--text <argument>) (--key <argument>) [--mode (<en`crypt> | <decrypt>)]`
+1. Caesar cipher: `polygraphia caesar (--text <argument>) (--key <argument>) [--mode (<encrypt> | <decrypt>)]`
 2. Atbash: `polygraphia atbash (--text <argument>) [--mode (<encrypt> | <decrypt>)]`
+3. Vigenère cipher: `polygraphia vigenere (--text <argument>) (--key <argument>) [--mode (<encrypt> | <decrypt>)]`
+4. Beaufort cipher: `polygraphia beaufort (--text <argument>) (--key <argument>)`
 
 (A more comprehensive help system is going to be implemented later)

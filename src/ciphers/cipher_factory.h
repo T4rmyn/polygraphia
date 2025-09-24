@@ -1,6 +1,7 @@
 #ifndef CIPHERFACTORY_H
 #define CIPHERFACTORY_H
 
+#include "beaufort.h"
 #include "cipher.h"
 #include "../parsers/parser.h"
 
@@ -21,6 +22,11 @@ namespace cipher {
     };
 
     class VigenereFactory: public CipherFactory {
+        public:
+            CipherBoxParser* create() override;
+    };
+
+    class BeaufortFactory: public CipherFactory {
         public:
             CipherBoxParser* create() override;
     };

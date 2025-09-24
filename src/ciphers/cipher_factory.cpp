@@ -1,4 +1,5 @@
 #include "cipher_factory.h"
+#include "beaufort.h"
 #include "caesar.h"
 #include "atbash.h"
 #include "vigenere.h"
@@ -18,5 +19,12 @@ CipherBoxParser* CaesarFactory::create() {
 CipherBoxParser* VigenereFactory::create() {
     VigenereCipher *box = new VigenereCipher();
     VigenereParser *parser = new VigenereParser(box);
+    return parser;
+}
+
+
+CipherBoxParser* BeaufortFactory::create() {
+    BeaufortCipher *box = new BeaufortCipher();
+    BeaufortParser *parser = new BeaufortParser(box);
     return parser;
 }

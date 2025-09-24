@@ -23,6 +23,12 @@ Mediator::Mediator() {
                 CipherFactory* factory = new VigenereFactory();
                 return factory->create();
             }
+        }, {
+            "beaufort",
+            []() -> CipherBoxParser* {
+                CipherFactory* factory = new BeaufortFactory();
+                return factory->create();
+            }
         },
     };
 }

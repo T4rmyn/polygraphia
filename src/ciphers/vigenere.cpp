@@ -51,7 +51,6 @@ void VigenereCipher::encrypt() {
             y = 0;
         }
         cleartext[x] = shift(cleartext[x], key[y], true);
-        cout << cleartext << endl;
         y += 1;
     }
     set_cipher_text(cleartext);
