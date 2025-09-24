@@ -19,6 +19,11 @@ namespace cipher {
         public:
             CipherBoxParser* create() override;
     };
+
+    class VigenereFactory: public CipherFactory {
+        public:
+            CipherBoxParser* create() override;
+    };
 }
 
 #endif

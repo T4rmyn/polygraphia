@@ -17,6 +17,12 @@ Mediator::Mediator() {
                 CipherFactory* factory = new AtbashFactory();
                 return factory->create();
             }
+        }, {
+            "vigenere",
+            []() -> CipherBoxParser* {
+                CipherFactory* factory = new VigenereFactory();
+                return factory->create();
+            }
         },
     };
 }

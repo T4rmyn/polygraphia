@@ -5,7 +5,7 @@
 
 void TerminalParser::process_tokens(deque<string> *tokens) {
     if (tokens->empty()) {
-        cout << "no\n";
+        cout << "No arguments provided!";
     } else {
         string first_arg = tokens->front();
         Mediator *mediator = new Mediator();
@@ -15,7 +15,7 @@ void TerminalParser::process_tokens(deque<string> *tokens) {
             tokens->pop_front();
             cipher_box.value()->process_tokens(tokens);
         } else {
-            cout << "no3\n";
+            cout << "Cipher not recognized!\n";
         }
     }
 }

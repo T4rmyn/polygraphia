@@ -11,10 +11,10 @@ Currently supported ciphers included in this program:
 - Monoalphabetic Substitution
     - [Atbash](https://en.wikipedia.org/wiki/Atbash)
     - [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
-
-## Planned Ciphers
 - Polyalphabetic Subtstitution
     - [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
+
+## Planned Ciphers
 - Transposition
     - [Rail fence cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
 - ... and more.

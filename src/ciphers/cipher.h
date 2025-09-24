@@ -24,7 +24,7 @@ namespace cipher {
         public:
             explicit StringKeyfulCipher(string a);
 
-            void set_string_key(string value);
+            virtual void set_string_key(string value);
             string get_string_key();
     };
 
