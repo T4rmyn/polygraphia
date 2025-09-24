@@ -21,7 +21,7 @@ Currently supported ciphers included in this program:
 - ... and more.
 
 ## Build Instructions
-This projects utilize CMake for building, below are the instructions (make sure to have CMake installed first).
+This project utilize CMake for building, below are the instructions (make sure to have CMake installed first).
 1. `mkdir src/build`
 2. `cd src/build`
 3. `cmake ..`
